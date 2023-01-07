@@ -1,5 +1,6 @@
 """Model of a prescription."""
 import os
+import random
 from dataclasses import dataclass
 
 from models.message import Message
@@ -10,24 +11,18 @@ from models.time import TimeOfDay
 class Prescription:
     """Model of a prescription."""
 
-    dosage: str
-    frequency: str
-    generic: str
-    brand: str
-    notes: str
-    is_generic: bool
-    time_of_day: TimeOfDay
-    instructions: str
-    quantity: int
-    refills: int
-    refill_expiration_date: str
-    rx_number: int
-    owner_id: int
-    created_at: str
-    updated_at: str
-    id: int
-    current_inventory: int
-    tablets_per_dose = int
+    name: str = ""
+    dosage: str = ""
+    notes: str = ""
+    morning_tablets = int = 0
+    afternoon_tablets = int = 0
+    evening_tablets = int = 0
+    refills: int = 0
+    refill_expiration_date: str = ""
+    rx_number: int = 0
+    owner_id: int = 0
+    id: int = random.Random(10000)
+    current_inventory: int = 0
 
     def refill(self):
         """Refill the prescription."""

@@ -1,1 +1,1 @@
-from . import prescriptions
+from . import patients, pharmacy, prescriptions, schedule
