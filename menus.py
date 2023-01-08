@@ -4,23 +4,40 @@ import arrow
 
 import db
 import models
+from backup import create_backup, restore_backup
+from seeds import create_seed_data, load_seeds
 
 
 @dataclass
 class Menu:
     title = "Main Menu"
-    primary_options = ("Patients", "Prescriptions", "Schedule", "Pharmacies")
+    primary_options = (
+        "Patients",
+        "Prescriptions",
+        "Schedule",
+        "Pharmacies",
+        "Seed Data",
+        "Create Backup",
+        "Restore Backup",
+        "Create Seed Data",
+        "Wipe Database",
+    )
     entries = []
     table_name = None
 
     def primary_display(self):
+        print("*" * 50)
         print(self.title)
+        print("*" * 50)
+        print("Type the number of the option you want to choose or type 'q' to quit.")
         for index, option in enumerate(self.primary_options):
             print(f"{index + 1}. {option}")
 
     @staticmethod
     def sub_menu_display(cls):
+        print("*" * 50)
         print(cls.title)
+
         for index, option in enumerate(cls.options):
             print(f"{index + 1}. {option}")
 
@@ -38,6 +55,11 @@ class Menu:
                             2: PrescriptionsMenu,
                             3: ScheduleMenu,
                             4: PharmaciesMenu,
+                            5: load_seeds,
+                            6: create_backup,
+                            7: restore_backup,
+                            8: create_seed_data,
+                            9: db.wipe_database,
                         }
                         self.choice_action(choice[user_input])
                     else:

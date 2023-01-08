@@ -1,0 +1,490 @@
+{
+    "patients": [
+        {
+            "first_name": "Jasmine",
+            "last_name": "Burgess",
+            "birth_date": "1972-07-07",
+            "id": 82
+        },
+        {
+            "first_name": "Sean",
+            "last_name": "Banks",
+            "birth_date": "2022-11-20",
+            "id": 80
+        },
+        {
+            "first_name": "Adam",
+            "last_name": "Park",
+            "birth_date": "2008-06-09",
+            "id": 66
+        },
+        {
+            "first_name": "Gerald",
+            "last_name": "Taylor",
+            "birth_date": "2004-08-12",
+            "id": 67
+        },
+        {
+            "first_name": "Scott",
+            "last_name": "Hayes",
+            "birth_date": "1985-05-19",
+            "id": 33
+        },
+        {
+            "first_name": "Megan",
+            "last_name": "Garcia",
+            "birth_date": "1987-12-01",
+            "id": 56
+        },
+        {
+            "first_name": "Louis",
+            "last_name": "Dominguez",
+            "birth_date": "1993-11-24",
+            "id": 33
+        },
+        {
+            "first_name": "Tammy",
+            "last_name": "White",
+            "birth_date": "1975-01-23",
+            "id": 40
+        },
+        {
+            "first_name": "Karen",
+            "last_name": "Townsend",
+            "birth_date": "2000-07-21",
+            "id": 69
+        },
+        {
+            "first_name": "Lisa",
+            "last_name": "Jones",
+            "birth_date": "1995-09-05",
+            "id": 41
+        }
+    ],
+    "prescriptions": [
+        {
+            "name": "Amber Mcmillan",
+            "dosage": "9mg",
+            "notes": "Protect improve property with water father drive.\nPresident miss daughter describe respond wall pay.\nVote quality nature price what color. Upon present modern letter course throughout material.",
+            "morning_tablets": 5,
+            "afternoon_tablets": 8,
+            "evening_tablets": 4,
+            "refills": 2,
+            "refill_expiration_date": "2016-07-13",
+            "rx_number": 723240,
+            "owner_id": 7,
+            "id": 81785,
+            "current_inventory": 5
+        },
+        {
+            "name": "Kenneth Gallagher",
+            "dosage": "5mg",
+            "notes": "Modern information him never reveal. Point small Republican likely structure born idea. Garden language easy plan share.\nEverybody real listen security head think upon. Middle whom people.",
+            "morning_tablets": 3,
+            "afternoon_tablets": 10,
+            "evening_tablets": 8,
+            "refills": 5,
+            "refill_expiration_date": "1980-05-15",
+            "rx_number": 457362,
+            "owner_id": 6,
+            "id": 69693,
+            "current_inventory": 54
+        },
+        {
+            "name": "James Lewis",
+            "dosage": "9mg",
+            "notes": "Turn authority particularly put major part. Evening from not act remain second. College glass rise amount network over.",
+            "morning_tablets": 10,
+            "afternoon_tablets": 8,
+            "evening_tablets": 4,
+            "refills": 8,
+            "refill_expiration_date": "1998-12-02",
+            "rx_number": 168297,
+            "owner_id": 10,
+            "id": 78852,
+            "current_inventory": 33
+        },
+        {
+            "name": "Benjamin Lucas",
+            "dosage": "2mg",
+            "notes": "Down campaign not. Brother ever add once note audience. Last president similar determine key message tend. Skill prevent high simply hot.",
+            "morning_tablets": 9,
+            "afternoon_tablets": 1,
+            "evening_tablets": 6,
+            "refills": 10,
+            "refill_expiration_date": "2001-03-07",
+            "rx_number": 437198,
+            "owner_id": 1,
+            "id": 28125,
+            "current_inventory": 80
+        },
+        {
+            "name": "Angela Gonzales",
+            "dosage": "1mg",
+            "notes": "Team court give. Whether one account specific dog fall style. Book region beyond leg what book letter.\nWorry citizen line. Ok financial public garden great beat.\nPower arm government tonight.",
+            "morning_tablets": 9,
+            "afternoon_tablets": 3,
+            "evening_tablets": 5,
+            "refills": 9,
+            "refill_expiration_date": "1995-04-06",
+            "rx_number": 420395,
+            "owner_id": 7,
+            "id": 48335,
+            "current_inventory": 21
+        },
+        {
+            "name": "Johnny Reed",
+            "dosage": "8mg",
+            "notes": "Catch hundred whose. Religious argue development throughout military care difficult. Nor forward policy ask choice.\nDecide nor fact would represent difficult. Air production reason.",
+            "morning_tablets": 4,
+            "afternoon_tablets": 1,
+            "evening_tablets": 8,
+            "refills": 3,
+            "refill_expiration_date": "1978-01-20",
+            "rx_number": 872555,
+            "owner_id": 1,
+            "id": 82657,
+            "current_inventory": 17
+        },
+        {
+            "name": "Nicole Kelley",
+            "dosage": "5mg",
+            "notes": "Better say though certain. Health into important him.\nPartner throw simply season listen lead put. Recent word goal save soon arrive upon song. Specific of girl several table and firm.",
+            "morning_tablets": 7,
+            "afternoon_tablets": 4,
+            "evening_tablets": 10,
+            "refills": 6,
+            "refill_expiration_date": "1992-05-15",
+            "rx_number": 327981,
+            "owner_id": 1,
+            "id": 31534,
+            "current_inventory": 6
+        },
+        {
+            "name": "Tina Ward",
+            "dosage": "9mg",
+            "notes": "Effort response begin oil. Away large growth these should door. Around star interest.",
+            "morning_tablets": 9,
+            "afternoon_tablets": 6,
+            "evening_tablets": 3,
+            "refills": 7,
+            "refill_expiration_date": "2002-04-14",
+            "rx_number": 323265,
+            "owner_id": 5,
+            "id": 69761,
+            "current_inventory": 98
+        },
+        {
+            "name": "Meghan Gilbert",
+            "dosage": "2mg",
+            "notes": "Answer middle whom staff. Adult figure today.\nMeasure it really focus. National think ready perform.",
+            "morning_tablets": 10,
+            "afternoon_tablets": 4,
+            "evening_tablets": 1,
+            "refills": 9,
+            "refill_expiration_date": "1997-07-16",
+            "rx_number": 557211,
+            "owner_id": 2,
+            "id": 46704,
+            "current_inventory": 98
+        },
+        {
+            "name": "Brandon Gonzalez",
+            "dosage": "2mg",
+            "notes": "Deep almost thing wall fly lose investment wide. Everybody adult young nor perform.\nMaterial hold through write provide make. Beyond pass apply yet. Put miss do gun challenge knowledge.",
+            "morning_tablets": 1,
+            "afternoon_tablets": 3,
+            "evening_tablets": 6,
+            "refills": 9,
+            "refill_expiration_date": "1998-05-13",
+            "rx_number": 772634,
+            "owner_id": 7,
+            "id": 70982,
+            "current_inventory": 61
+        }
+    ],
+    "schedules": [
+        {
+            "morning_medication": [],
+            "afternoon_medication": [],
+            "evening_medication": [],
+            "patient_id": 82,
+            "id": 72285
+        },
+        {
+            "morning_medication": [
+                {
+                    "Kenneth Gallagher": 3
+                }
+            ],
+            "afternoon_medication": [
+                {
+                    "Kenneth Gallagher": 10
+                }
+            ],
+            "evening_medication": [],
+            "patient_id": 80,
+            "id": 14291
+        },
+        {
+            "morning_medication": [],
+            "afternoon_medication": [
+                {
+                    "James Lewis": 8
+                }
+            ],
+            "evening_medication": [
+                {
+                    "James Lewis": 4
+                }
+            ],
+            "patient_id": 66,
+            "id": 56128
+        },
+        {
+            "morning_medication": [],
+            "afternoon_medication": [],
+            "evening_medication": [
+                {
+                    "Benjamin Lucas": 6
+                }
+            ],
+            "patient_id": 67,
+            "id": 97074
+        },
+        {
+            "morning_medication": [],
+            "afternoon_medication": [
+                {
+                    "Angela Gonzales": 3
+                }
+            ],
+            "evening_medication": [
+                {
+                    "Angela Gonzales": 5
+                }
+            ],
+            "patient_id": 33,
+            "id": 29373
+        },
+        {
+            "morning_medication": [],
+            "afternoon_medication": [
+                {
+                    "Johnny Reed": 1
+                }
+            ],
+            "evening_medication": [
+                {
+                    "Johnny Reed": 8
+                }
+            ],
+            "patient_id": 56,
+            "id": 14799
+        },
+        {
+            "morning_medication": [],
+            "afternoon_medication": [],
+            "evening_medication": [],
+            "patient_id": 33,
+            "id": 75239
+        },
+        {
+            "morning_medication": [],
+            "afternoon_medication": [],
+            "evening_medication": [
+                {
+                    "Tina Ward": 3
+                }
+            ],
+            "patient_id": 40,
+            "id": 15739
+        },
+        {
+            "morning_medication": [
+                {
+                    "Meghan Gilbert": 10
+                }
+            ],
+            "afternoon_medication": [
+                {
+                    "Meghan Gilbert": 4
+                }
+            ],
+            "evening_medication": [
+                {
+                    "Meghan Gilbert": 1
+                }
+            ],
+            "patient_id": 69,
+            "id": 61149
+        },
+        {
+            "morning_medication": [
+                {
+                    "Brandon Gonzalez": 1
+                }
+            ],
+            "afternoon_medication": [],
+            "evening_medication": [
+                {
+                    "Brandon Gonzalez": 6
+                }
+            ],
+            "patient_id": 41,
+            "id": 84197
+        }
+    ],
+    "pharmacies": [
+        {
+            "name": "Michael Cook",
+            "address": "74894 Serrano Orchard\nNicolefort, OR 61658",
+            "city": "Lindseymouth",
+            "state": "Louisiana",
+            "zip_code": "64858",
+            "phone_number": "225.276.0023",
+            "fax_number": "(937)645-5495x7839",
+            "email": "shawn42@example.org",
+            "website": "http://www.khan.net/",
+            "is_default": 1,
+            "created_at": "2013-02-24",
+            "updated_at": "2009-05-18",
+            "id": 91163
+        },
+        {
+            "name": "Barry Johnston",
+            "address": "9066 Zuniga Pine Apt. 073\nBrandonshire, MN 74037",
+            "city": "North Lauriefurt",
+            "state": "Missouri",
+            "zip_code": "99214",
+            "phone_number": "448-552-5122",
+            "fax_number": "+1-325-239-3940x620",
+            "email": "ericgarcia@example.net",
+            "website": "https://www.mathis-robbins.com/",
+            "is_default": 0,
+            "created_at": "1993-08-08",
+            "updated_at": "1987-05-02",
+            "id": 68940
+        },
+        {
+            "name": "Megan Jackson",
+            "address": "091 Galvan Lake\nTaylorside, SC 09164",
+            "city": "Lake Christinaville",
+            "state": "New York",
+            "zip_code": "55410",
+            "phone_number": "(438)923-1236x939",
+            "fax_number": "(825)044-9516",
+            "email": "jacob23@example.com",
+            "website": "https://www.weber-yates.com/",
+            "is_default": 0,
+            "created_at": "2007-11-30",
+            "updated_at": "2022-06-02",
+            "id": 33325
+        },
+        {
+            "name": "Jonathan Patel",
+            "address": "909 Rachel Fords\nEverettville, TX 49507",
+            "city": "Pollardshire",
+            "state": "Maryland",
+            "zip_code": "07107",
+            "phone_number": "(852)615-8408",
+            "fax_number": "560.872.5496x4717",
+            "email": "rasmussenmeghan@example.com",
+            "website": "http://www.jordan-simpson.net/",
+            "is_default": 1,
+            "created_at": "2008-09-14",
+            "updated_at": "2007-10-29",
+            "id": 34353
+        },
+        {
+            "name": "Amy Harris",
+            "address": "01970 Catherine Rest Apt. 427\nSouth Monica, PW 49622",
+            "city": "Peterbury",
+            "state": "Maryland",
+            "zip_code": "61580",
+            "phone_number": "+1-293-302-0457",
+            "fax_number": "+1-905-590-9543x4398",
+            "email": "aliciaphillips@example.org",
+            "website": "http://townsend.info/",
+            "is_default": 1,
+            "created_at": "1976-01-04",
+            "updated_at": "1987-07-14",
+            "id": 47513
+        },
+        {
+            "name": "Carolyn Lopez",
+            "address": "4766 Nguyen Street\nSouth Krystal, ND 77503",
+            "city": "Lake Aaronchester",
+            "state": "New Hampshire",
+            "zip_code": "88273",
+            "phone_number": "061.691.9528x32825",
+            "fax_number": "879-608-6174",
+            "email": "anthony66@example.net",
+            "website": "https://www.stevens.org/",
+            "is_default": 1,
+            "created_at": "1996-07-30",
+            "updated_at": "1975-04-11",
+            "id": 75092
+        },
+        {
+            "name": "Deborah Henson",
+            "address": "USS Wright\nFPO AE 12565",
+            "city": "New Karen",
+            "state": "Arizona",
+            "zip_code": "86358",
+            "phone_number": "(830)339-2721",
+            "fax_number": "+1-500-058-1376",
+            "email": "joesullivan@example.org",
+            "website": "https://www.duffy.com/",
+            "is_default": 0,
+            "created_at": "1986-12-27",
+            "updated_at": "1999-08-14",
+            "id": 78336
+        },
+        {
+            "name": "Taylor Burke",
+            "address": "112 Joseph Groves\nNew Waynebury, RI 40247",
+            "city": "Turnerton",
+            "state": "Texas",
+            "zip_code": "41444",
+            "phone_number": "338-155-8609x7991",
+            "fax_number": "+1-225-535-8561x836",
+            "email": "bhill@example.net",
+            "website": "http://www.long-cain.net/",
+            "is_default": 1,
+            "created_at": "1978-09-03",
+            "updated_at": "1986-04-15",
+            "id": 83920
+        },
+        {
+            "name": "Haley Barron",
+            "address": "Unit 0947 Box 1722\nDPO AP 89525",
+            "city": "New Marystad",
+            "state": "Virginia",
+            "zip_code": "34369",
+            "phone_number": "647-979-3001x7528",
+            "fax_number": "(719)003-7726",
+            "email": "mike47@example.com",
+            "website": "http://www.joseph.biz/",
+            "is_default": 1,
+            "created_at": "1980-06-01",
+            "updated_at": "1993-08-31",
+            "id": 39349
+        },
+        {
+            "name": "Melanie Thompson",
+            "address": "USNV Shaw\nFPO AP 56123",
+            "city": "Alexanderland",
+            "state": "Pennsylvania",
+            "zip_code": "28528",
+            "phone_number": "001-631-563-5888x80914",
+            "fax_number": "361-960-2642",
+            "email": "sarahbass@example.org",
+            "website": "https://hernandez.info/",
+            "is_default": 1,
+            "created_at": "2011-06-09",
+            "updated_at": "1978-12-12",
+            "id": 38967
+        }
+    ]
+}

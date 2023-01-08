@@ -3,6 +3,7 @@ import os
 import random
 from dataclasses import dataclass
 
+import db
 from models.message import Message
 from models.time import TimeOfDay
 
@@ -14,9 +15,9 @@ class Prescription:
     name: str = ""
     dosage: str = ""
     notes: str = ""
-    morning_tablets = int = 0
-    afternoon_tablets = int = 0
-    evening_tablets = int = 0
+    morning_tablets: int = 0
+    afternoon_tablets: int = 0
+    evening_tablets: int = 0
     refills: int = 0
     refill_expiration_date: str = ""
     rx_number: int = 0
@@ -44,3 +45,16 @@ class Prescription:
             to=os.environ["PHONE_NUMBER"],
         )
         message.send()
+
+    def save(self):
+        """Save the prescription."""
+        try:
+            self.id = db.insert(
+                "prescriptions",
+                **self.__dict__,
+            )
+            return True
+        except Exception as e:
+            print(e)
+            print("There was an error saving the pharmacy.")
+            return False
