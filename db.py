@@ -55,9 +55,7 @@ def update(table, **kwargs):
 
 
 def delete(table, id):
-    import pdb
 
-    pdb.set_trace()
     connection = get_connection()
     cursor = connection.cursor()
 
