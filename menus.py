@@ -21,6 +21,7 @@ class Menu:
         "Restore Backup",
         "Create Seed Data",
         "Wipe Database",
+        "Check What Prescriptions need to be refilled",
     )
     entries = []
     table_name = None
@@ -60,6 +61,7 @@ class Menu:
                             7: restore_backup,
                             8: create_seed_data,
                             9: db.wipe_database,
+                            10: check_refills,
                         }
                         self.choice_action(choice[user_input])
                     else:
@@ -472,3 +474,40 @@ class PharmaciesMenu(Menu):
         pharmacy.save()
         print("Pharmacy saved!")
         self.sub_menu_display(self)
+
+
+def check_refills():
+    """Check if any prescriptions are running low on refills."""
+    prescriptions = db.get_all("prescriptions")
+    schedules = db.get_all("schedules")
+    for schedule in schedules:
+        for prescription in prescriptions:
+            # iterated through the schdule to see if the prescription is in the schedule
+            # if it is, then calculate how many tablets are left wen subtracting the number of tablets
+            # from the number of tablets needed for morgning/afternoon/night
+            # if the number of tablets left is less than 0, then print a message saying that the patient is out of tablets
+            # if the number of tablets left is greater than 0, then print a message saying that the patient has x number of tablets left
+            full_schedule = (
+                schedule["morning_medication"]
+                + schedule["afternoon_medication"]
+                + schedule["evening_medication"]
+            )
+            tablets_per_day = 0
+            if full_schedule == "":
+                continue
+            breakpoint()
+            for medication in full_schedule:
+                try:
+                    tablets_per_day += medication[prescription["name"]]
+                except KeyError:
+                    continue
+            full_days_remaining = prescription["current_inventory"] / tablets_per_day
+
+            if full_days_remaining < 7:
+                print(
+                    f"Patient {schedule['patient_id']} is running low on {prescription['name']}."
+                )
+                print(f"Patient has {full_days_remaining} days of medication left.")
+                print(f"Patient has {prescription['current_inventory']} tablets left.")
+                if full_days_remaining < 1:
+                    print("Patient is out of medication.")

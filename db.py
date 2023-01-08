@@ -97,9 +97,6 @@ def get_all(table):
     rows = [dict(zip(column_names, row)) for row in rows]
     if table == "schedules":
         # the morning, afternoon, and evening columns are stored as pickled lists
-        # self.morning_medication = pickle.loads(schedule["morning_medication"])
-        # self.afternoon_medication = pickle.loads(schedule["afternoon_medication"])
-        # self.evening_medication = pickle.loads(schedule["evening_medication"])
         # so we need to unpickle them
         for row in rows:
             if row["morning_medication"]:
