@@ -18,38 +18,32 @@ class Menu:
         try:
             while True:
                 self.display()
-                choice = input("Enter a choice or x to exit: ")
+                user_input = input("Select an option: ")
                 try:
-                    print(f"You chose {self.options[int(choice) - 1]}")
-                    choice = int(choice)
-                    if choice == 1:
-                        patients_menu = PatientsMenu()
-                        patients_menu.display()
-                        patients_menu.get_user_input()
-                    elif choice == 2:
-                        prescriptions_menu = PrescriptionsMenu()
-                        prescriptions_menu.display()
-                        prescriptions_menu.get_user_input()
-
-                    elif choice == 3:
-                        schedule_menu = ScheduleMenu()
-                        schedule_menu.display()
-                        schedule_menu.get_user_input()
-
-                    elif choice == 4:
-
-                        pharmacies_menu = PharmaciesMenu()
-                        pharmacies_menu.display()
-                        pharmacies_menu.get_user_input()
-
-                except ValueError:
-                    if choice.lower() == "x":
+                    user_input = int(user_input)
+                    if user_input in range(1, len(self.options) + 1):
+                        print(f"You chose {self.options[user_input - 1]}")
+                        choice = {1: PatientsMenu, 2: PrescriptionsMenu, 3: ScheduleMenu, 4: PharmaciesMenu}
+                        self.choice_action(choice[user_input])
+                    else:
+                        print("Please enter a valid choice.")
+                        continue
+                except Exception:
+                    if isinstance(user_input, str) and user_input.lower() in ["q", "quit", "exit", "x"]:
                         print("Goodbye!")
                         break
-                    print("Please enter a valid choice.")
-                    continue
+                    else:
+                        print("Please enter a valid choice.")
+                        continue
+
         except KeyboardInterrupt:
             print("Goodbye!")
+
+    @staticmethod
+    def choice_action(cls):
+        sub_menu = cls()
+        sub_menu.display()
+        sub_menu.get_user_input()
 
 
 @dataclass
